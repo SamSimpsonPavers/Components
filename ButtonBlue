@@ -1,0 +1,65 @@
+
+
+import { FunctionComponent } from 'react';
+import styles from './UsagePageColourBlueIcon.module.css';
+
+
+const UsagePageColourBlueIcon:FunctionComponent = () => {
+  	return (
+    		<div className={styles.usagepageColourblueIcon}>
+      			<div className={styles.button}>Button</div>
+    		</div>);
+};
+
+export default UsagePageColourBlueIcon;
+
+
+
+
+
+
+:root {
+  --color-blue: #005170;
+  --color-white: #fff;
+  --space-025: 4px;
+  --space-075: 12px;
+  --space-100: 16px;
+
+  --ButtonBlue-padding-x:--space-075;
+  --ButtonBlue-padding-y:--space-075;
+  --ButtonBlue-size-borderradius:--space-025;
+  --ButtonBlue-color-background: --color-blue;
+  --ButtonBlue-color-buttonlabel: --color-white;
+}
+
+.button {
+  	position: relative;
+  	font-weight: 500;
+}
+.usagepageColourblueIcon {
+  	position: relative;
+  	border-radius: var(--ButtonBlue-size-borderradius);
+  	background-color: var(--ButtonBlue-color-background);
+  	width: 100%;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: var(--ButtonBlue-padding-x) var(--ButtonBlue-padding-y);
+  	box-sizing: border-box;
+  	color: var(--ButtonBlue-color-buttonlabel);
+  	font-family: Inter;
+    text-align: center;
+  	font-size: 16px;
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+body {
+  	margin: 0; line-height: normal;
+}
