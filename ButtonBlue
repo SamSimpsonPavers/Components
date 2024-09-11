@@ -18,18 +18,18 @@ export default UsagePageColourBlueIcon;
 
 
 
-:root {
+html {
   --color-blue: #005170;
   --color-white: #fff;
   --space-025: 4px;
   --space-075: 12px;
   --space-100: 16px;
 
-  --ButtonBlue-padding-x:--space-075;
-  --ButtonBlue-padding-y:--space-075;
-  --ButtonBlue-size-borderradius:--space-025;
-  --ButtonBlue-color-background: --color-blue;
-  --ButtonBlue-color-buttonlabel: --color-white;
+  --ButtonBlue-padding-x: var(--space-075);
+  --ButtonBlue-padding-y: var(--space-075);
+  --ButtonBlue-size-borderradius: var(--space-025);
+  --ButtonBlue-color-background: var(--color-blue);
+  --ButtonBlue-color-buttonlabel: var(--color-white);
 }
 
 .button {
